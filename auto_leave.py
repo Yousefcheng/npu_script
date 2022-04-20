@@ -87,7 +87,7 @@ class Aoxiang:
         qj_list_url = 'https://yqtb.nwpu.edu.cn/wx/xg/xsqj/qjsq/qjsq_list.jsp'
         middle_url='https://yqtb.nwpu.edu.cn/wx/xg/yz-mobile/grzx_xs.jsp'
         leave_url = 'https://yqtb.nwpu.edu.cn/wx/xg/xsqj/qjsq/qjsq_util.jsp'
-           
+            
         res = self.session.get(url)
         res = self.session.get(middle_url)
         res = self.session.get(qj_list_url)
@@ -201,13 +201,10 @@ def pprint(msg):
 if __name__ == '__main__':
 
     leave_sid = os.environ.get('leave_sid')
-    leave_sid = '2021264575'
     leave_sid = str(leave_sid).split('&')
     leave_pwd = os.environ.get('leave_pwd')
-    leave_pwd = 'Cyf13935401857.'
     leave_pwd = str(leave_pwd).split('&')
     token = os.environ.get('token')
-    token = '70c65f566959458c817df67529f0541a'
     token = str(token).split('&')
 
     msg = ''
