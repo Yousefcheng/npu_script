@@ -200,7 +200,7 @@ def pprint(msg):
 
 if __name__ == '__main__':
 
-    leave_sid = os.environ.get('Leave_SID')
+    leave_sid = os.environ.get('LEAVE_SID')
     
     leave_sid = str(leave_sid).split('&')
     print(leave_sid)
