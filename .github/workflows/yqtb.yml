@@ -37,4 +37,4 @@ jobs:
       env:
           yqtb_sid: ${{ secrets.YQTB_SID }}
           yqtb_pwd: ${{ secrets.YQTB_PWD }}
-          token: ${{ TOKEN }}
+          token: ${{ secrets.TOKEN }}
