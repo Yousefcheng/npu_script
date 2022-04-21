@@ -6,6 +6,8 @@ name: 疫情填报
 on:
   schedule:
   - cron: "0 5,14 * * *"
+  watch:
+    types: [started]  
 
 permissions:
   contents: read
