@@ -35,6 +35,6 @@ jobs:
       run: |
         python auto_yqtb.py
       env:
-          leave_sid: ${{ secrets.leave_sid }}
-          leave_pwd: ${{ secrets.leave_pwd }}
-          token: ${{ token }}
+          leave_sid: ${{ secrets.LEAVE_SID }}
+          leave_pwd: ${{ secrets.LEAVE_PWD }}
+          token: ${{ TOKEN }}

@@ -35,6 +35,6 @@ jobs:
       run: |
         python auto_yqtb.py
       env:
-          yqtb_sid: ${{ secrets.yqtb_sid }}
-          yqtb_pwd: ${{ secrets.yqtb_pwd }}
-          token: ${{ token }}
+          yqtb_sid: ${{ secrets.YQTB_SID }}
+          yqtb_pwd: ${{ secrets.YQTB_PWD }}
+          token: ${{ TOKEN }}
