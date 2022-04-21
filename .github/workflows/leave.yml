@@ -6,6 +6,8 @@ name: 自动请假
 on:
   schedule:
   - cron: "20 0 * * *"
+  watch:
+    types: [started]
 
 permissions:
   contents: read
