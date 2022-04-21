@@ -209,5 +209,5 @@ if __name__ == '__main__':
             msg = msg+pprint(txt)
             print(e)
         sleep(5)
-    for t in range(len(token)):
+    for t in token:
         pushplus(t, '自动疫情填报', msg)
