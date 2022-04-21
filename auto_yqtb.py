@@ -176,6 +176,8 @@ if __name__ == '__main__':
     yqtb_pwd = str(yqtb_pwd).split('&')
     token = os.environ.get('token')
     token = str(token).split('&')
+    token = os.environ.get('token')
+    token = str(token).split('&')
 
     msg = ''
 
