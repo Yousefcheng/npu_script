@@ -202,7 +202,7 @@ if __name__ == '__main__':
 
     leave_sid = os.environ.get('LEAVE_SID')
     
-    leave_sid = str(leave_sid).split('&')
+    # leave_sid = str(leave_sid).split('&')
     print(leave_sid)
     leave_pwd = os.environ.get('leave_pwd')
     leave_pwd = str(leave_pwd).split('&')
