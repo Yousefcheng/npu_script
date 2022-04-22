@@ -6,12 +6,12 @@ name: 疫情填报
 on:
   schedule:
   - cron: "0 5,14 * * *"
-  watch:
-    types: [started]
+  # watch:
+  #   types: [started]
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]  
+  # pull_request:
+  #   branches: [ main ]  
 
 # permissions:
 #   contents: read
