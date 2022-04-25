@@ -1,6 +1,6 @@
 """
 cron: 20 0 * * *
-new Env('自动请假');
+new Env('自动课程评价');
 """
 
 # from email import header

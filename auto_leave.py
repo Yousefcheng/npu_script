@@ -24,7 +24,6 @@ class Aoxiang:
         # self.session.close
         response1 = self.session.get(aoxiang_url)
         self.cookie = self.session.cookies
-        # self.yqtb_cookie = self.session.cookies["JSESSIONID"]
         self.uis_cookie = response1.cookies["SESSION"]
 
     def login_aoxiang(self, studentId, password):
@@ -171,7 +170,6 @@ class Aoxiang:
             "Referer": 'http://yqtb.nwpu.edu.cn/wx/xg/xsqj/qjsq/qjsq_list.jsp',
             "Accept-Encoding": "gzip, deflate",
             "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-            # "Cookie" : "JSESSIONID=" + yqtb_cookie
 
         }
 

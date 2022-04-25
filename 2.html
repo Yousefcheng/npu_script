@@ -1,0 +1,622 @@
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=8,9,10" />
+<meta charset="utf-8" />
+<title>研究生教育综合管理系统(学生服务)</title>
+<link href="/pyxx/assets/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="/pyxx/assets/css/font-awesome.min.css" />
+<!--[if IE 7]>
+<link rel="stylesheet" href="/pyxx/assets/css/font-awesome-ie7.min.css" />
+<![endif]-->
+<!-- page specific plugin styles -->
+<!-- fonts -->
+<link rel="stylesheet" href="/pyxx/assets/css/ace-fonts.css" />
+<!-- ace styles -->
+<link rel="stylesheet" href="/pyxx/assets/css/ace.min.css" />
+<link rel="stylesheet" href="/pyxx/assets/css/ace-rtl.min.css" />
+<link rel="stylesheet" href="/pyxx/assets/css/ace-skins.min.css" />
+<link rel="stylesheet" href="/pyxx/assets/css/jquery.gritter.css" />
+<!-- 列表样式  start -->
+<link rel="stylesheet" href="/pyxx/assets/plugin/jquery.datatable.css" />
+<script src='/pyxx/assets/js/jquery-2.0.3.min.js'></script>
+ 
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="/pyxx/assets/css/ace-ie.min.css" />
+<![endif]-->
+<!-- inline styles related to this page -->
+<!-- ace settings handler -->
+<script src="/pyxx/assets/js/ace-extra.min.js"></script>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="/pyxx/assets/js/html5shiv.js"></script>
+<script src="/pyxx/assets/js/respond.min.js"></script>
+<![endif]-->
+<!-- basic scripts --><!--[if !IE]>--&gt;
+<script type="text/javascript">
+			window.jQuery || document.write("<script src='/pyxx/assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
+		</script>
+<!-- <![endif]--><!--[if IE]>
+<script type="text/javascript">
+		 window.jQuery || document.write("<script src='/pyxx/assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+		</script>
+<![endif]--> 
+
+<script type="text/javascript" src="/pyxx/resources/scripts/jquery-domain.min.js"></script>
+<script type="text/javascript">
+			if("ontouchend" in document) document.write("<script src='/pyxx/assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+		</script>
+<script src="/pyxx/assets/js/bootstrap.min.js"></script>
+<script src="/pyxx/assets/js/typeahead-bs2.min.js"></script>
+<!-- page specific plugin scripts -->
+<script src="/pyxx/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="/pyxx/assets/js/jquery.ui.touch-punch.min.js"></script>
+<script src="/pyxx/assets/js/jquery.slimscroll.min.js"></script>
+<script src="/pyxx/assets/js/jquery.gritter.min.js"></script>
+<script src="/pyxx/assets/js/bootbox.min.js"></script>
+<!-- ace scripts -->
+<script src="/pyxx/assets/js/ace-elements.min.js"></script>
+<script src="/pyxx/assets/js/ace.min.js"></script>
+<!--提示框-->
+<script type="text/javascript" src="/pyxx/resources/scripts/jquery.tips.js"></script>
+<script type="text/javascript" src="/pyxx/resources/scripts/common.js"></script>
+<!-- 列表javascript  start -->
+<script type="text/javascript" src="/pyxx/assets/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="/pyxx/assets/js/jquery.dataTables.bootstrap.js"></script>
+<!-- 列表javascript  end -->
+<script src="/pyxx/assets/js/ace-elements.min.js"></script>
+<script src="/pyxx/assets/js/ace.min.js"></script>
+<script type="text/javascript" src="/pyxx/assets/plugin/artDialog/dist/dialog-min.js"></script>
+<script type="text/javascript" src="/pyxx/assets/plugin/jquery.bootstrapAce.js"></script>
+<link  rel="stylesheet" type="text/css"  href="//at.alicdn.com/t/font_1125272_4agjb2pu4t5.css"/>
+<style type="text/css">
+	.sltb{
+		float: none;
+	    padding-top: 24px;
+	    color: #fff;
+	    font-size: 22px;
+	    font-family:"宋体";
+	}
+</style>
+</head>
+<body>
+
+<div class="navbar navbar-default" id="navbar" style="background:rgb(6, 79, 146);">
+	<script type="text/javascript">
+		try{ace.settings.check('navbar' , 'fixed')}catch(e){}
+	</script>
+	<div class="navbar-container" id="navbar-container">
+		<div class="navbar-header pull-left">
+			<span class="navbar-brand"><small>
+			<img src="/pyxx/resources/main/logo.png" border="0"></img>
+			</small></span>
+		</div>
+		<div>
+			<p class="sltb" style="float:left;padding-top: 10px;">
+				<i class="iconfont icon-ai-tel" style="font-size: 24px;margin-left: 22px;margin-right: 20px;"></i>
+				029-88492090<br/>服务QQ群：499639807
+			</p>
+			<p class="sltb" style="float:left;padding-top: 30px;margin-left: 10px;">
+				<a href="http://gs.nwpu.edu.cn/xwz/cs.htm" target="_blank">
+					<span style="color:red">系统帮助</span>
+				</a>
+			</p>
+			
+		</div>
+		<div>
+			<a href="javascript:void(0);" target="_blank" onclick="yjx()">
+				<img src="/pyxx/resources/main/yjx.gif" style="float:left;margin-left: 80px;width:100px;" />
+			</a>
+			
+		</div>
+		<div class="navbar-header pull-right" role="navigation" style="padding-top: 20px;">
+			<ul class="nav ace-nav" style="float:left;">
+				<li class="light-blue">
+				<a style="cursor:pointer;background-color:rgb(6, 79, 146);"  href="/pyxx" >
+				<img class="nav-user-photo" style="margin:6px 0px 0 0" src="/pyxx/resources/main/icon_home.png" alt="" />				
+				</a>				
+				</li>			
+			</ul>
+			<ul class="nav ace-nav" style="float:left;" >
+				<li class="light-blue">
+				<a data-toggle="dropdown" style="background:rgb(6, 79, 146)" href="#" class="dropdown-toggle"><!-- style="background:rgb(6, 79, 146) !important;" -->
+				<img class="nav-user-photo" src="/pyxx/grxx/xszphd/zp/xj/2021264575" alt="" />
+				<span class="user-info"><small>欢迎您,</small>成泳甫</span>
+				<i class="icon-caret-down"></i></a>
+				<ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+					
+					<li class="divider"></li>
+					<li><a href="#" onclick="logout()"><i class="icon-off"></i>退出 </a></li>
+				</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /.container --></div>
+<div class="main-container" id="main-container">
+	<script type="text/javascript">
+				try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+			</script>
+	<div class="main-container-inner">
+		<div class="main-content">
+			 
+				
+<script src="/pyxx/assets/js/jquery-ui-1.10.3.full.min.js"></script>
+<script src="/pyxx/assets/js/jquery.ui.touch-punch.min.js"></script>
+<link rel="stylesheet" href="/pyxx/assets/css/jquery-ui-1.10.3.full.min.css" />
+	<div class="page-content">
+	<div class="widget-box">
+				<div class="widget-header widget-header-large">
+					<h4><b>课程评价</b> </h4>
+						
+					<div class="widget-toolbar">  
+							<!-- <button type="button"  style="margin-top: 5px;" class="btn btn-xs btn-primary" onclick="createBtn();">
+								<i class="icon-edit align-top bigger-150"></i>  
+								申请
+							</button>  -->
+							<button type="button"  style="margin-top: 5px;" class="btn btn-xs btn-return " onclick="return_index('/pyxx')"
+								style="margin-top:4px">
+								<i class="icon-undo  align-top bigger-150"></i>
+								返回
+							</button>   
+					</div>
+					<!-- <div class="alert alert-warning">
+					<button type="button" class="close" data-dismiss="alert">
+					<i class="icon-remove"></i></button>
+					<strong><i class="icon-bell"></i>提示!</strong> <br>
+					 以下课程已修完，请给予该课程教师评价建议及意见！<br>
+					</div> -->
+				</div>
+				<div class="table-responsive">
+					<table id="sample-table-1" class="table table-striped table-bordered table-hover">
+						<thead>
+							<tr>
+								<th style="display:none">id</th> 
+								<th class='center' >序号</th>
+								<th class='center' >学期</th>
+								<th class='center'>课程编号</th>
+								<th class='center'>课程名称</th>
+								<th class='center'>教师姓名</th>
+								<th class='center' >是否已评价</th> 
+								<th class='center' >操作</th> 
+							</tr>
+						</thead>
+						
+						 
+						
+						<tr> 
+							<td  style="display:none"></td> 
+							<td class='center' ><span class="badge badge-success">1</span></td> 
+							<td class='center' >2021-2022秋</td>    
+							<td class='center'>M11G11001</td>  
+							<td   ><a  class="blue" href="javascript:showKCXX('M11G11001')" >矩阵论</a></td> 
+							<td class='center' >刘哲</td>  
+							<td class='center'>是</td>  
+							<td  align="center" >
+							
+							     
+								
+								 
+								<button class="btn btn-xs btn-success "  type="botton" onclick="edit('1414402','2969676');" title="查看">
+										<i class="icon-search bigger-120"></i>查看
+									</button>
+									
+								
+							
+							</td>  
+						</tr>
+						 
+						
+						<tr> 
+							<td  style="display:none"></td> 
+							<td class='center' ><span class="badge badge-success">2</span></td> 
+							<td class='center' >2021-2022秋</td>    
+							<td class='center'>M11G11002</td>  
+							<td   ><a  class="blue" href="javascript:showKCXX('M11G11002')" >数值分析</a></td> 
+							<td class='center' >宋博</td>  
+							<td class='center'>是</td>  
+							<td  align="center" >
+							
+							     
+								
+								 
+								<button class="btn btn-xs btn-success "  type="botton" onclick="edit('1391786','2969631');" title="查看">
+										<i class="icon-search bigger-120"></i>查看
+									</button>
+									
+								
+							
+							</td>  
+						</tr>
+						 
+						
+						<tr> 
+							<td  style="display:none"></td> 
+							<td class='center' ><span class="badge badge-success">3</span></td> 
+							<td class='center' >2021-2022秋</td>    
+							<td class='center'>M17G11001</td>  
+							<td   ><a  class="blue" href="javascript:showKCXX('M17G11001')" >工程伦理学</a></td> 
+							<td class='center' >宫淑燕</td>  
+							<td class='center'>是</td>  
+							<td  align="center" >
+							
+							     
+								
+								 
+								<button class="btn btn-xs btn-success "  type="botton" onclick="edit('1301779','2969590');" title="查看">
+										<i class="icon-search bigger-120"></i>查看
+									</button>
+									
+								
+							
+							</td>  
+						</tr>
+						 
+						
+						<tr> 
+							<td  style="display:none"></td> 
+							<td class='center' ><span class="badge badge-success">4</span></td> 
+							<td class='center' >2021-2022秋</td>    
+							<td class='center'>M17G11003</td>  
+							<td   ><a  class="blue" href="javascript:showKCXX('M17G11003')" >新时代中国特色社会主义理论与实践研究</a></td> 
+							<td class='center' >杨小勋</td>  
+							<td class='center'>是</td>  
+							<td  align="center" >
+							
+							     
+								
+								 
+								<button class="btn btn-xs btn-success "  type="botton" onclick="edit('1301598','2970015');" title="查看">
+										<i class="icon-search bigger-120"></i>查看
+									</button>
+									
+								
+							
+							</td>  
+						</tr>
+						 
+						
+						<tr> 
+							<td  style="display:none"></td> 
+							<td class='center' ><span class="badge badge-success">5</span></td> 
+							<td class='center' >2021-2022秋</td>    
+							<td class='center'>M17G11017</td>  
+							<td   ><a  class="blue" href="javascript:showKCXX('M17G11017')" >习近平新时代中国特色社会主义思想专题研究</a></td> 
+							<td class='center' >鲁杰</td>  
+							<td class='center'>是</td>  
+							<td  align="center" >
+							
+							     
+								
+								 
+								<button class="btn btn-xs btn-success "  type="botton" onclick="edit('1275741','3267811');" title="查看">
+										<i class="icon-search bigger-120"></i>查看
+									</button>
+									
+								
+							
+							</td>  
+						</tr>
+						 
+						
+						<tr> 
+							<td  style="display:none"></td> 
+							<td class='center' ><span class="badge badge-success">6</span></td> 
+							<td class='center' >2021-2022秋</td>    
+							<td class='center'>M21G21001</td>  
+							<td   ><a  class="blue" href="javascript:showKCXX('M21G21001')" >无人机操作方法训练与实践</a></td> 
+							<td class='center' >许涛</td>  
+							<td class='center'>是</td>  
+							<td  align="center" >
+							
+							     
+								
+								 
+								<button class="btn btn-xs btn-success "  type="botton" onclick="edit('1352442','3382820');" title="查看">
+										<i class="icon-search bigger-120"></i>查看
+									</button>
+									
+								
+							
+							</td>  
+						</tr>
+						
+						 
+						
+						<tr> 
+							<td  style="display:none"></td> 
+							<td class='center' ><span class="badge badge-success">7</span></td> 
+							<td class='center' >2021-2022春</td>    
+							<td class='center'>M10G11011</td>  
+							<td   ><a  class="blue" href="javascript:showKCXX('M10G11011')" >高级Python程序设计</a></td> 
+							<td class='center' >张秀伟</td>  
+							<td class='center'>否</td>  
+							<td  align="center" >
+							 
+								 
+								<div > 
+								<button class="btn btn-xs btn-success "  type="botton" onclick="edit('0','3914827');" title="编辑">
+										<i class="icon-edit bigger-120"></i>评价
+									</button>
+								</div> 
+								
+								
+							
+							</td>  
+						</tr>
+						 
+						
+						<tr> 
+							<td  style="display:none"></td> 
+							<td class='center' ><span class="badge badge-success">8</span></td> 
+							<td class='center' >2021-2022春</td>    
+							<td class='center'>M16G12034</td>  
+							<td   ><a  class="blue" href="javascript:showKCXX('M16G12034')" >TED英语演讲与口语实践</a></td> 
+							<td class='center' >韩荣</td>  
+							<td class='center'>是</td>  
+							<td  align="center" >
+							 
+								
+								 
+								<button class="btn btn-xs btn-success "  type="botton" onclick="edit('0','3962462');" title="查看">
+										<i class="icon-search bigger-120"></i>查看
+									</button>
+									
+								
+							
+							</td>  
+						</tr>
+						 
+						
+						<tr> 
+							<td  style="display:none"></td> 
+							<td class='center' ><span class="badge badge-success">9</span></td> 
+							<td class='center' >2021-2022春</td>    
+							<td class='center'>M16G12038</td>  
+							<td   ><a  class="blue" href="javascript:showKCXX('M16G12038')" >文化与翻译</a></td> 
+							<td class='center' >黄河</td>  
+							<td class='center'>否</td>  
+							<td  align="center" >
+							 
+								 
+								<div > 
+								<button class="btn btn-xs btn-success "  type="botton" onclick="edit('0','3962486');" title="编辑">
+										<i class="icon-edit bigger-120"></i>评价
+									</button>
+								</div> 
+								
+								
+							
+							</td>  
+						</tr>
+						 
+						
+						<tr> 
+							<td  style="display:none"></td> 
+							<td class='center' ><span class="badge badge-success">10</span></td> 
+							<td class='center' >2021-2022春</td>    
+							<td class='center'>M21M11004</td>  
+							<td   ><a  class="blue" href="javascript:showKCXX('M21M11004')" >机器人系统的状态估计与自主导航</a></td> 
+							<td class='center' >张通</td>  
+							<td class='center'>否</td>  
+							<td  align="center" >
+							 
+								 
+								<div > 
+								<button class="btn btn-xs btn-success "  type="botton" onclick="edit('0','5001616');" title="编辑">
+										<i class="icon-edit bigger-120"></i>评价
+									</button>
+								</div> 
+								
+								
+							
+							</td>  
+						</tr>
+						 
+						
+						<tr> 
+							<td  style="display:none"></td> 
+							<td class='center' ><span class="badge badge-success">11</span></td> 
+							<td class='center' >2021-2022春</td>    
+							<td class='center'>M21M11008</td>  
+							<td   ><a  class="blue" href="javascript:showKCXX('M21M11008')" >无人系统智能信息处理与协同技术</a></td> 
+							<td class='center' >许悦雷</td>  
+							<td class='center'>否</td>  
+							<td  align="center" >
+							 
+								 
+								<div > 
+								<button class="btn btn-xs btn-success "  type="botton" onclick="edit('0','4329055');" title="编辑">
+										<i class="icon-edit bigger-120"></i>评价
+									</button>
+								</div> 
+								
+								
+							
+							</td>  
+						</tr>
+						 
+						
+						<tr> 
+							<td  style="display:none"></td> 
+							<td class='center' ><span class="badge badge-success">12</span></td> 
+							<td class='center' >2021-2022春</td>    
+							<td class='center'>M21M11009</td>  
+							<td   ><a  class="blue" href="javascript:showKCXX('M21M11009')" >智能计算芯片技术</a></td> 
+							<td class='center' >张洵颖</td>  
+							<td class='center'>否</td>  
+							<td  align="center" >
+							 
+								 
+								<div > 
+								<button class="btn btn-xs btn-success "  type="botton" onclick="edit('0','5001617');" title="编辑">
+										<i class="icon-edit bigger-120"></i>评价
+									</button>
+								</div> 
+								
+								
+							
+							</td>  
+						</tr>
+						 
+						
+						<tr> 
+							<td  style="display:none"></td> 
+							<td class='center' ><span class="badge badge-success">13</span></td> 
+							<td class='center' >2021-2022春</td>    
+							<td class='center'>M21M11015</td>  
+							<td   ><a  class="blue" href="javascript:showKCXX('M21M11015')" >智能对抗与智能决策</a></td> 
+							<td class='center' >张凯</td>  
+							<td class='center'>否</td>  
+							<td  align="center" >
+							 
+								 
+								<div > 
+								<button class="btn btn-xs btn-success "  type="botton" onclick="edit('0','4983881');" title="编辑">
+										<i class="icon-edit bigger-120"></i>评价
+									</button>
+								</div> 
+								
+								
+							
+							</td>  
+						</tr>
+						 
+						
+						<tr> 
+							<td  style="display:none"></td> 
+							<td class='center' ><span class="badge badge-success">14</span></td> 
+							<td class='center' >2021-2022春</td>    
+							<td class='center'>M21M12001</td>  
+							<td   ><a  class="blue" href="javascript:showKCXX('M21M12001')" >advanced manufacturing driven product development</a></td> 
+							<td class='center' >袁上钦</td>  
+							<td class='center'>否</td>  
+							<td  align="center" >
+							 
+								 
+								<div > 
+								<button class="btn btn-xs btn-success "  type="botton" onclick="edit('0','4328109');" title="编辑">
+										<i class="icon-edit bigger-120"></i>评价
+									</button>
+								</div> 
+								
+								
+							
+							</td>  
+						</tr>
+						
+						
+					</table>
+				</div>
+								
+			</div>
+</div>
+<div id="dialog-message" class="hide" style="width:800px;height:500px">
+			 <iframe scrolling='no' frameborder='0' style='width:100%;height:100%;' id="frm_dialog-message" src='about:blank'></iframe>
+		</div>
+		<div id="dialog-message1" class="hide" style="width:800px;height:500px">
+	 <iframe scrolling='no' frameborder='0' style='width:100%;height:100%;' id="frm_dialog-message1" src='about:blank'></iframe>
+</div>
+<div id="dialog-message2" class="hide" style="width:800px;height:500px">
+	 <iframe scrolling='no' frameborder='0' style='width:100%;height:100%;' id="frm_dialog-message2" src='about:blank'></iframe>
+</div>
+<script>  
+	function edit(id,bjid){
+	     window.location = "/pyxx/pygl/jxpj/editpj/"+id+"?bjid="+bjid;
+	}
+	function createBtn(kcbh){
+	     window.location = "/pyxx/pygl/kcmxsq/apply?kcbh="+kcbh;
+	}
+	function eid(id,type){
+		var url="/pyxx/ReportServer?reportlet=jxpj_xs.cpt&id="+id;
+		$("#frm_dialog-message1").attr("src",url);
+	 	   var dialog = $( "#dialog-message1" ).removeClass('hide').dialog({
+					modal: true,
+					title: "培养计划打印",
+					title_html: true,
+					width:1100,
+					height:600,
+					buttons: [ 
+						{
+							text: "关闭",
+							"class" : "btn btn-primary btn-xs",
+							click: function() {
+								$( this ).dialog( "close" ); 
+							} 
+						}
+					]
+				}); 
+	}
+	
+	function showKCXX(kcbh){
+		$("#frm_dialog-message").attr("src","/pyxx/pygl/kckk/view/"+kcbh);
+		   var dialog = $( "#dialog-message" ).removeClass('hide').dialog({
+				modal: true,
+				title: "查看课程信息",
+				title_html: true,
+				width:1000,
+				height:600,
+				buttons: [ 
+					{
+						text: "确定",
+						"class" : "btn btn-primary btn-xs",
+						click: function() {
+							$( this ).dialog( "close" ); 
+						} 
+					}
+				]
+			}); 
+	}
+	
+	
+	function showImage(){
+		$("#frm_dialog-message2").attr("src","/pyxx/pygl/jxpj/kfsz/ewmzs/1");
+		   var dialog = $( "#dialog-message2" ).removeClass('hide').dialog({
+				modal: true,
+				title: "",
+				title_html: true,
+				width:600,
+				height:400,
+				buttons: [ 
+					{
+						text: "确定",
+						"class" : "btn btn-primary btn-xs",
+						click: function() {
+							$( this ).dialog( "close" ); 
+						} 
+					}
+				]
+			}); 
+       }
+</script>
+				</div>
+	</div>
+	<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse"  title="置顶" style="position: fixed;bottom: 10px;">
+	<i class="icon-double-angle-up icon-only bigger-110"></i></a></div>
+<!-- /.main-container -->
+
+</body>
+	<script language="javascript">
+		function logout(){
+			if (confirm("您是否确认退出？")){
+				
+				location.href = "/pyxx/sso/logout"; 
+				
+				
+			} 
+		}
+		
+		function yjx(){
+			window.location.href="/pyxx/pygl/yjx/index";
+		}
+		//$('#navbar').css("background","rgb(6, 79, 146)");
+	</script>
+</html>
+<![endif]-->
